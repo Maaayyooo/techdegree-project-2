@@ -1,0 +1,405 @@
+/* I'm trying for the "Exceeds Expectations" grade */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Setting up backgound and width */
+
+body {
+    color: whitesmoke;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    background-color: #5bc778;
+}
+
+h1 {margin-top: 0.8em;
+    font-size: 2em;
+}
+
+h2 {
+    margin: 0;            
+    font-size: 1.4rem;
+}
+
+h3 {
+    margin: 0;
+}
+
+h1,
+h2 {
+    color:  rgba(255, 255, 255, 0.74);
+}
+
+.main-header,
+.main-container,
+.footer-container,
+.contact,
+.interests,
+.interests-section {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+main {
+    background-color:rgb(123, 143, 124);
+}
+
+img {
+    width: 100%;
+}
+
+/* Header section */
+
+.main-nav {
+    margin-top: 2em;
+}
+
+.main-header li {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    list-style-type: none;
+    background-color:#3d804f;
+    margin-bottom: 6px;
+    padding:0.8em 0;
+    list-style-position: inside;
+}
+
+.main-header a {
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+}
+
+.main-header a:hover {
+    color: black;
+}
+
+.main-header ul {
+    padding-left: 0;
+}
+
+.profile-image {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width:80%;
+}
+
+.main-header p {
+    font-size: 1.3em;
+}
+
+.main-header {
+    padding-bottom: 1.2em;
+    background-color:#5bc778;
+}
+
+/* main section */
+
+.main-container {
+    padding-top: 3em;    
+    padding-bottom: 3em;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.main-container h2,
+.interests h2 {
+    margin-bottom: 1.2em;
+}
+
+.main-container img {
+    margin-bottom: 2.3em;
+    margin-top: 2.3em;
+}
+
+.main-container p {
+   font-size: 1.2em;
+}
+
+/*Interests section*/
+
+.interests {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.interests img {
+    margin-bottom: 2.3em;
+    margin-top: 2.3em;
+}
+
+.interests p {
+    font-size: 1.2em;
+}
+
+/* Contact section */
+
+.contact {
+    font-size: 1.2rem;
+    padding-top: 3.5em;
+    padding-bottom: 3em;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+.contact-p {
+    margin-top: 1.7em;
+    margin-bottom: 1.7em;
+}
+
+.contact span {
+    font-weight: 700;
+    padding-left: 0.8em;
+}
+
+.contact-list {
+    padding-left: 0;
+}
+
+.contact-list li{
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+.contact a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* Footer section */
+
+.footer-container {
+    border-top: 2px solid whitesmoke;
+    padding-top: 2.3em;
+    padding-bottom: 3em;
+}
+
+.Name {
+    float: left;
+}
+
+.bottom-nav {
+    display: none;
+}
+
+.back-t-top {
+    float: right;
+    text-transform: uppercase;
+}
+
+.back-t-top a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.back-t-top a:hover {
+    color: black;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*For 768px or higher*/
+@media (min-width: 768px) {
+.main-header,
+.main-container,
+.interests,
+.footer-container,
+.contact {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/*header section*/
+.main-header h1 {
+    margin-bottom: 0.5em;
+}
+
+.main-header ul {
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.main-header li{
+    float: left;
+    margin-left:1em;
+    margin-right:1em;
+    background-color: initial;
+}
+
+.main-header a {
+    padding: 1.5em;
+}
+
+.main-header img {
+    width: 30%;
+    float: right;
+    margin-top: 20.8px;
+    margin-left: 5px;
+}
+
+.main-header p {
+    width: 68%;
+    float:left;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+/*main content*/
+
+.main-container div {
+    width: 47.5%;
+    float: left;
+}
+
+.col-2,
+.col-4,
+.col-6 {
+    margin-left: 5%;
+}
+
+.main-container p {
+    height: 72px;
+}
+
+/*Skill section*/
+
+.interests div {
+    width: 47.5%;
+    float: left;
+}
+
+.interests-col-1 {
+    margin-right: 5%;
+}
+
+.interests p {
+    height: 72px;
+}
+
+/*Footer section*/
+
+.back-t-top {
+    display: none;
+}
+
+.bottom-nav {
+    display: block;
+    float: right;
+}
+
+.bottom-nav ul {
+    padding-left: 0;
+}
+
+.bottom-nav li {
+    list-style-type: none;
+    float: left;
+    margin-left:1.7em;
+    font-size: 18.72px;
+    font-weight: bold;
+}
+
+.bottom-nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0.2em 0.5em;
+}
+
+.bottom-nav a:hover {
+    color: black;
+}
+
+.Name {
+    margin-top: 16px;
+}
+
+.footer-container {
+    padding-top: 1em; 
+    padding-bottom: 3.5em;
+}
+}
+
+@media (min-width: 1024px)  {
+.main-header,
+.main-container,
+.interests,
+.footer-container,
+.contact {
+    width: 90%;
+}
+
+body {
+    margin-top: 20px;
+}
+/*Header section*/
+
+.main-header h1 {
+    float: left;
+    padding-top: 16.4px;
+    padding-bottom: 16.4px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main-header ul {
+    float: right;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main-header img {
+    width: 30%;
+    margin-left: 10px;
+}
+
+.main-header p {
+    width: 68%;
+}
+
+.main-header li {
+    margin-right: 0;
+    margin-left: 2.2em;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.main-header a {
+    padding-top: 26.4px;
+    padding-bottom: 26.4px;
+}
+
+/*main section*/
+
+.main-container div {
+    width: 30%;
+    float: left;
+}
+
+.col-3,
+.col-5 {
+    margin-left: 5%;
+}
+
+.col-4 {
+    margin-left: 0%;
+}
+
+/*Contact section*/
+
+.contact {
+    width:80%;
+}
+
+/*Footer section*/
+
+.footer-container {
+    padding-bottom: 1em;
+}
+}
